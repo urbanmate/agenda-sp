@@ -1,0 +1,42 @@
+name: Fix favorites date and order
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/fix-favorites-datetime.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Add date label and chronological order to favorites
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('index.html')
+          s = p.read_text(encoding='utf-8')
+          old_meta = '<div class="meta"><span class="pill">${e.time}</span>'
+          new_meta = '<div class="meta">${favView?`<span class="pill"><b>${({friday:\'SEXTA\',saturday:\'SÁBADO\',sunday:\'DOMINGO\',monday:\'SEGUNDA\'})[e.day]} · ${e.date}</b></span>`:\'\'}<span class="pill">${e.time}</span>'
+          if old_meta not in s:
+              raise SystemExit('Expected card meta pattern not found')
+          s = s.replace(old_meta, new_meta, 1)
+          old_favs = "function renderFavs(){const a=E.filter(e=>fav.has(e.id));favs.innerHTML=a.length?a.map(e=>card(e,true)).join(''):'<div class=\"empty\">Nenhum favorito ainda.</div>';bind(favs)}"
+          new_favs = "function renderFavs(){const order={friday:0,saturday:1,sunday:2,monday:3};const a=E.filter(e=>fav.has(e.id)).sort((a,b)=>order[a.day]-order[b.day]||a.start.localeCompare(b.start));favs.innerHTML=a.length?a.map(e=>card(e,true)).join(''):'<div class=\"empty\">Nenhum favorito ainda.</div>';bind(favs)}"
+          if old_favs not in s:
+              raise SystemExit('Expected renderFavs pattern not found')
+          s = s.replace(old_favs, new_favs, 1)
+          p.write_text(s, encoding='utf-8')
+          PY
+      - name: Commit fix
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git diff --cached --quiet && exit 0
+          git commit -m "Melhora favoritos com dia, data e ordem cronológica"
+          git push
