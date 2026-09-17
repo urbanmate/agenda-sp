@@ -1,43 +1,1432 @@
 <!doctype html>
+<!-- C Law Growth Experience V4 | Conteúdo final + sharing assets em 17/09/2026 -->
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>C Law Experience | Proposta de Growth 2027</title>
-<meta name="description" content="Growth Foundation + Growth Leadership | Wagner Soares">
-<meta name="robots" content="noindex,nofollow,noarchive">
-<meta property="og:type" content="website">
-<meta property="og:title" content="C Law Experience | Proposta de Growth 2027">
-<meta property="og:description" content="Growth Foundation + Growth Leadership | Wagner Soares">
-<meta property="og:image" content="https://claw-growth-2027.lovable.app/og-claw-growth-2027.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:site_name" content="Wagner Soares | Proposta de Growth">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="C Law Experience | Proposta de Growth 2027">
-<meta name="twitter:description" content="Growth Foundation + Growth Leadership | Wagner Soares">
-<meta name="twitter:image" content="https://claw-growth-2027.lovable.app/og-claw-growth-2027.png">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%230a1a31'/%3E%3Cpath d='M13 18h7l6.6 26 6.2-19h6.4l6.2 19L52 18h7L49.6 48h-7.1L36 29.8 29.5 48h-7.1L13 18z' fill='%23f8f9fb'/%3E%3Ccircle cx='48' cy='47' r='3.1' fill='%23c5a665'/%3E%3C/svg%3E">
-<style>html,body{margin:0;background:#071426;color:#fff;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}body{min-height:100vh;display:grid;place-items:center}.loading{opacity:.72;font-size:14px;letter-spacing:.08em;text-transform:uppercase}</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>C Law Experience | Proposta de Growth 2027</title>
+  <meta name="description" content="Proposta de Growth 2027 para o C Law Experience, por Wagner Soares." />
+  <meta name="robots" content="noindex,nofollow,noarchive" />
+  <meta name="theme-color" content="#071426" />
+
+  <!-- Ao publicar, use URL absoluta para og-growth-2027.png se o host não resolver OG relativo. -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="C Law Experience | Proposta de Growth 2027" />
+  <meta property="og:description" content="Growth Foundation + Growth Leadership | Wagner Soares" />
+  <meta property="og:image" content="https://claw-growth-2027.lovable.app/og-claw-growth-2027.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="C Law Experience | Proposta de Growth 2027 por Wagner Soares" />
+  <meta property="og:site_name" content="Wagner Soares | Proposta de Growth" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://claw-growth-2027.lovable.app/og-claw-growth-2027.png" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2215%22 fill=%22%230a1a31%22/%3E%3Cpath d=%22M13 18h7l6.6 26 6.2-19h6.4l6.2 19L52 18h7L49.6 48h-7.1L36 29.8 29.5 48h-7.1L13 18z%22 fill=%22%23f8f9fb%22/%3E%3Ccircle cx=%2248%22 cy=%2247%22 r=%223.1%22 fill=%22%23c5a665%22/%3E%3C/svg%3E">
+
+  <style>
+    :root {
+      --navy-950: #06111f;
+      --navy-900: #071426;
+      --navy-850: #0a1a31;
+      --navy-800: #0d223f;
+      --blue: #4d83ff;
+      --blue-soft: #8badff;
+      --warm: #c5a665;
+      --warm-soft: #e2cfaa;
+      --paper: #f4f2ed;
+      --paper-2: #ece9e2;
+      --white: #ffffff;
+      --ink: #091625;
+      --muted: #6f7a87;
+      --line-light: rgba(255,255,255,.14);
+      --line-dark: rgba(9,22,37,.13);
+      --shadow: 0 24px 70px rgba(3,10,21,.20);
+      --radius: 26px;
+      --max: 1220px;
+      --ease: cubic-bezier(.2,.75,.2,1);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.45;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    a { color: inherit; text-decoration: none; }
+    button, textarea { font: inherit; }
+    button { cursor: pointer; }
+
+    .noise {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 100;
+      opacity: .035;
+      mix-blend-mode: multiply;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.24'/%3E%3C/svg%3E");
+    }
+
+    .topbar {
+      position: fixed;
+      inset: 0 0 auto 0;
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 26px;
+      z-index: 70;
+      color: white;
+      transition: color .35s var(--ease), background .35s var(--ease), backdrop-filter .35s var(--ease);
+      border-bottom: 1px solid transparent;
+    }
+    .topbar.scrolled {
+      background: rgba(6,17,31,.78);
+      backdrop-filter: blur(18px);
+      border-color: rgba(255,255,255,.08);
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      min-width: 160px;
+      min-height: 32px;
+    }
+    .brand img {
+      display: block;
+      height: 27px;
+      width: auto;
+      max-width: 155px;
+      filter: brightness(0) invert(1);
+    }
+    .brand-fallback {
+      display: none;
+      letter-spacing: .22em;
+      font-weight: 600;
+      font-size: 12px;
+      white-space: nowrap;
+    }
+    .section-counter {
+      font-size: 11px;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      opacity: .72;
+    }
+    .section-counter strong { color: var(--warm-soft); font-weight: 600; }
+
+    .rail {
+      position: fixed;
+      right: 24px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 60;
+      display: grid;
+      gap: 10px;
+      padding: 13px 10px;
+      border-radius: 999px;
+      background: rgba(6,17,31,.62);
+      border: 1px solid rgba(255,255,255,.08);
+      backdrop-filter: blur(14px);
+    }
+    .rail a {
+      display: grid;
+      place-items: center;
+      width: 22px;
+      height: 22px;
+      border-radius: 999px;
+      color: rgba(255,255,255,.48);
+      font-size: 9px;
+      transition: .3s var(--ease);
+    }
+    .rail a.active {
+      color: white;
+      background: rgba(255,255,255,.13);
+      transform: scale(1.08);
+    }
+
+    main { position: relative; z-index: 1; }
+    section {
+      min-height: 100vh;
+      padding: 128px max(32px, calc((100vw - var(--max))/2)) 92px;
+      position: relative;
+      overflow: clip;
+    }
+    .dark { background: var(--navy-900); color: white; }
+    .dark-alt { background: var(--navy-850); color: white; }
+    .light { background: var(--paper); }
+    .light-alt { background: var(--paper-2); }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: .20em;
+      font-size: 11px;
+      font-weight: 650;
+      color: var(--warm);
+      margin-bottom: 18px;
+    }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 {
+      font-size: clamp(46px, 7vw, 108px);
+      line-height: .93;
+      letter-spacing: -.05em;
+      font-weight: 520;
+      max-width: 980px;
+      margin-bottom: 28px;
+    }
+    h2 {
+      font-size: clamp(34px, 4.4vw, 68px);
+      line-height: 1.01;
+      letter-spacing: -.04em;
+      font-weight: 520;
+      max-width: 1000px;
+      margin-bottom: 34px;
+    }
+    h3 {
+      font-size: clamp(21px, 2vw, 30px);
+      line-height: 1.08;
+      letter-spacing: -.025em;
+      font-weight: 540;
+    }
+    .lead {
+      font-size: clamp(18px, 1.7vw, 24px);
+      line-height: 1.48;
+      max-width: 820px;
+      color: rgba(255,255,255,.73);
+    }
+    .light .lead, .light-alt .lead { color: #53606d; }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity .7s var(--ease), transform .7s var(--ease);
+    }
+    .reveal.is-visible { opacity: 1; transform: none; }
+
+    /* Hero */
+    .hero {
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding-bottom: 72px;
+      isolation: isolate;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: min(66vw, 900px);
+      aspect-ratio: 1;
+      border: 1px solid rgba(77,131,255,.25);
+      border-radius: 50%;
+      right: -18vw;
+      top: -18vw;
+      box-shadow: 0 0 0 70px rgba(77,131,255,.025), 0 0 0 140px rgba(77,131,255,.018);
+      z-index: -1;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 44vw;
+      height: 1px;
+      right: 10vw;
+      top: 32vh;
+      background: linear-gradient(90deg, transparent, rgba(197,166,101,.78), transparent);
+      transform: rotate(-28deg);
+      transform-origin: center;
+      z-index: -1;
+    }
+    .hero-sub {
+      font-size: clamp(18px, 2vw, 30px);
+      color: rgba(255,255,255,.74);
+      margin-bottom: 46px;
+    }
+    .hero-meta {
+      display: flex;
+      justify-content: space-between;
+      gap: 28px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line-light);
+      font-size: 13px;
+      letter-spacing: .04em;
+      color: rgba(255,255,255,.58);
+    }
+    .scroll-cue {
+      display: inline-flex;
+      gap: 10px;
+      align-items: center;
+    }
+    .scroll-cue i {
+      display: inline-block;
+      width: 28px;
+      height: 1px;
+      background: var(--warm);
+      position: relative;
+      overflow: hidden;
+    }
+    .scroll-cue i::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: white;
+      transform: translateX(-100%);
+      animation: cue 2.2s var(--ease) infinite;
+    }
+    @keyframes cue { 50%,100% { transform: translateX(100%); } }
+
+    /* Opportunity */
+    .opp-grid {
+      display: grid;
+      grid-template-columns: 1.32fr .68fr;
+      gap: clamp(42px, 8vw, 120px);
+      align-items: start;
+      margin-top: 54px;
+    }
+    .big-metric {
+      padding: 34px 0 24px;
+      border-top: 1px solid var(--line-dark);
+      border-bottom: 1px solid var(--line-dark);
+    }
+    .metric-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .22em;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+    .metric {
+      font-size: clamp(74px, 12vw, 170px);
+      line-height: .88;
+      letter-spacing: -.065em;
+      font-weight: 480;
+      display: flex;
+      align-items: baseline;
+      gap: .16em;
+      white-space: nowrap;
+    }
+    .metric .arrow { color: var(--blue); font-size: .48em; transform: translateY(-.12em); }
+    .metric .target { color: var(--navy-900); }
+    .metric-note { margin-top: 18px; color: #64707b; max-width: 600px; }
+    .pillars {
+      display: grid;
+      gap: 0;
+      border-top: 1px solid var(--line-dark);
+    }
+    .pillar {
+      padding: 24px 0 27px;
+      border-bottom: 1px solid var(--line-dark);
+    }
+    .pillar strong {
+      display: block;
+      text-transform: uppercase;
+      letter-spacing: .17em;
+      font-size: 11px;
+      color: var(--blue);
+      margin-bottom: 10px;
+    }
+    .pillar p { margin: 0; font-size: 17px; color: #4f5c69; }
+    .statement {
+      margin-top: 56px;
+      max-width: 900px;
+      font-size: clamp(22px, 2.7vw, 38px);
+      line-height: 1.16;
+      letter-spacing: -.025em;
+      color: var(--navy-900);
+    }
+
+
+    .opportunity-close {
+      margin-top: 62px;
+      padding-top: 34px;
+      border-top: 1px solid var(--line-dark);
+      max-width: 1080px;
+    }
+    .opportunity-close h3 {
+      font-size: clamp(28px, 3.4vw, 48px);
+      line-height: 1.06;
+      letter-spacing: -.035em;
+      margin-bottom: 28px;
+      max-width: 900px;
+    }
+    .growth-chain {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--line-dark);
+      border: 1px solid var(--line-dark);
+      margin: 0 0 28px;
+    }
+    .growth-chain div {
+      background: var(--paper);
+      padding: 22px 24px;
+      color: #4f5c69;
+      font-size: 16px;
+    }
+    .growth-chain strong { color: var(--navy-900); font-weight: 620; }
+    .opportunity-close p {
+      max-width: 900px;
+      color: #53606d;
+      font-size: 18px;
+      margin-bottom: 0;
+    }
+
+    /* Wagner */
+    .trust-grid {
+      display: grid;
+      grid-template-columns: .78fr 1.22fr;
+      gap: clamp(40px, 9vw, 140px);
+      align-items: start;
+    }
+    .context-tags { display: grid; gap: 12px; margin-top: 32px; }
+    .context-tag {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 0;
+      border-bottom: 1px solid rgba(255,255,255,.14);
+    }
+    .context-tag span:first-child { font-size: 20px; }
+    .context-tag span:last-child { font-size: 11px; color: rgba(255,255,255,.5); text-transform: uppercase; letter-spacing: .16em; }
+    .trust-copy p { color: rgba(255,255,255,.72); font-size: 18px; max-width: 700px; }
+    .trust-quote {
+      margin-top: 48px;
+      padding-left: 24px;
+      border-left: 2px solid var(--warm);
+      font-size: clamp(27px, 3.6vw, 50px);
+      line-height: 1.05;
+      letter-spacing: -.035em;
+      max-width: 780px;
+    }
+
+
+    /* Career / Section 03 */
+    .career-head { max-width: 1120px; }
+    .career-grid {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: clamp(44px, 8vw, 118px);
+      align-items: start;
+      margin-top: 48px;
+    }
+    .career-copy p {
+      color: rgba(255,255,255,.72);
+      font-size: 18px;
+      max-width: 680px;
+    }
+    .career-copy p:last-child { margin-bottom: 0; }
+    .capability-list {
+      border-top: 1px solid rgba(255,255,255,.15);
+    }
+    .capability {
+      display: grid;
+      grid-template-columns: minmax(155px, .7fr) 1.6fr;
+      gap: 28px;
+      padding: 20px 0 22px;
+      border-bottom: 1px solid rgba(255,255,255,.15);
+    }
+    .capability strong {
+      font-size: 11px;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--warm-soft);
+      font-weight: 650;
+    }
+    .capability span {
+      color: rgba(255,255,255,.76);
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    .career-label {
+      margin-top: 62px;
+      margin-bottom: 16px;
+      font-size: 10px;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.52);
+    }
+    .career-milestones {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border-top: 1px solid rgba(255,255,255,.15);
+      border-bottom: 1px solid rgba(255,255,255,.15);
+    }
+    .milestone {
+      padding: 26px 26px 26px 0;
+      min-height: 144px;
+      border-right: 1px solid rgba(255,255,255,.15);
+    }
+    .milestone:not(:first-child) { padding-left: 26px; }
+    .milestone:last-child { border-right: 0; }
+    .milestone strong {
+      display: block;
+      font-size: clamp(30px, 3vw, 46px);
+      line-height: .98;
+      letter-spacing: -.04em;
+      color: white;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+    .milestone span {
+      color: rgba(255,255,255,.56);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    .career-market {
+      margin-top: 34px;
+      max-width: 980px;
+      color: rgba(255,255,255,.68);
+      font-size: 17px;
+      line-height: 1.55;
+    }
+    .career-close {
+      margin-top: 54px;
+      padding-left: 24px;
+      border-left: 2px solid var(--warm);
+      max-width: 980px;
+    }
+    .career-close strong {
+      display: block;
+      font-size: clamp(28px, 3.8vw, 52px);
+      line-height: 1.04;
+      letter-spacing: -.035em;
+      font-weight: 500;
+      margin-bottom: 18px;
+    }
+    .career-close p {
+      margin-bottom: 0;
+      color: rgba(255,255,255,.67);
+      font-size: 18px;
+      max-width: 820px;
+    }
+
+    /* Proposal */
+    .proposal-stage {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+      margin-top: 40px;
+    }
+    .growth-orbit {
+      position: relative;
+      min-height: 520px;
+      display: grid;
+      place-items: center;
+    }
+    .growth-core {
+      width: 190px;
+      height: 190px;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(77,131,255,.38);
+      border-radius: 50%;
+      font-size: 34px;
+      letter-spacing: -.04em;
+      color: var(--navy-900);
+      background: rgba(255,255,255,.56);
+      box-shadow: 0 24px 80px rgba(77,131,255,.12);
+      z-index: 2;
+    }
+    .growth-core::before,
+    .growth-core::after {
+      content: "";
+      position: absolute;
+      border: 1px solid rgba(9,22,37,.11);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .growth-core::before { width: 360px; height: 360px; }
+    .growth-core::after { width: 490px; height: 490px; }
+    .orbit-label {
+      position: absolute;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: .13em;
+      font-weight: 600;
+      transition: transform .5s var(--ease), color .5s var(--ease);
+    }
+    .orbit-label:nth-of-type(1) { top: 12%; left: 15%; }
+    .orbit-label:nth-of-type(2) { top: 12%; right: 13%; }
+    .orbit-label:nth-of-type(3) { top: 47%; right: 2%; }
+    .orbit-label:nth-of-type(4) { bottom: 10%; right: 17%; }
+    .orbit-label:nth-of-type(5) { bottom: 10%; left: 17%; }
+    .orbit-label:nth-of-type(6) { top: 47%; left: 1%; }
+    .proposal-stage.is-visible .orbit-label { color: var(--blue); }
+    .proposal-copy { max-width: 590px; }
+    .proposal-copy p { color: #586572; font-size: 18px; }
+    .proposal-key {
+      margin-top: 36px;
+      padding-top: 28px;
+      border-top: 1px solid var(--line-dark);
+      font-size: 23px;
+      line-height: 1.3;
+      color: var(--navy-900);
+    }
+
+
+    .proposal-areas {
+      margin-top: 28px;
+      border-top: 1px solid var(--line-dark);
+    }
+    .proposal-area {
+      display: grid;
+      grid-template-columns: minmax(130px, .65fr) 1.45fr;
+      gap: 24px;
+      padding: 16px 0 18px;
+      border-bottom: 1px solid var(--line-dark);
+    }
+    .proposal-area strong {
+      font-size: 10px;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--blue);
+      font-weight: 700;
+    }
+    .proposal-area span {
+      color: #586572;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+    .proposal-role {
+      margin-top: 36px;
+      padding-top: 28px;
+      border-top: 1px solid var(--line-dark);
+    }
+    .proposal-role strong {
+      display: block;
+      font-size: clamp(26px, 3vw, 42px);
+      line-height: 1.08;
+      letter-spacing: -.03em;
+      color: var(--navy-900);
+      font-weight: 520;
+      margin-bottom: 18px;
+    }
+    .proposal-role p { margin-bottom: 14px; }
+    .proposal-role .final-line {
+      margin-top: 22px;
+      color: var(--navy-900);
+      font-size: 21px;
+      line-height: 1.3;
+    }
+
+    /* Phases */
+    .phase-wrap {
+      display: grid;
+      grid-template-columns: 1fr 110px 1fr;
+      gap: 32px;
+      align-items: stretch;
+      margin-top: 64px;
+    }
+    .phase {
+      min-height: 440px;
+      padding: 34px;
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: var(--radius);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: rgba(255,255,255,.025);
+    }
+    .phase .num {
+      color: var(--warm-soft);
+      font-size: 13px;
+      letter-spacing: .2em;
+    }
+    .phase h3 { font-size: clamp(34px,4vw,58px); margin-bottom: 14px; }
+    .phase .date { color: var(--blue-soft); font-size: 16px; }
+    .phase p { color: rgba(255,255,255,.64); font-size: 17px; max-width: 450px; }
+    .phase .verb {
+      padding-top: 22px;
+      border-top: 1px solid rgba(255,255,255,.14);
+      color: white;
+      font-size: 14px;
+      letter-spacing: .08em;
+    }
+    .phase-line {
+      position: relative;
+      display: grid;
+      place-items: center;
+    }
+    .phase-line::before {
+      content: "";
+      width: 1px;
+      height: 100%;
+      background: linear-gradient(to bottom, transparent, rgba(197,166,101,.78), transparent);
+    }
+    .phase-line::after {
+      content: "→";
+      position: absolute;
+      width: 46px;
+      height: 46px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--navy-900);
+      border: 1px solid rgba(197,166,101,.48);
+      color: var(--warm-soft);
+      font-size: 19px;
+    }
+
+    /* Fronts */
+    .fronts-layout {
+      display: grid;
+      grid-template-columns: .7fr 1.3fr;
+      gap: clamp(46px, 9vw, 140px);
+      align-items: start;
+    }
+    .fronts-intro { position: sticky; top: 120px; }
+    .fronts-intro h2 { margin-bottom: 24px; }
+    .fronts-intro p { color: #5b6875; font-size: 17px; max-width: 430px; }
+    .fronts-list { border-top: 1px solid var(--line-dark); }
+    .front {
+      min-height: 34vh;
+      padding: 34px 0 42px;
+      border-bottom: 1px solid var(--line-dark);
+      display: grid;
+      grid-template-columns: 80px 1fr;
+      gap: 18px;
+      opacity: .42;
+      transform: translateX(8px);
+      transition: opacity .4s var(--ease), transform .4s var(--ease);
+    }
+    .front.active { opacity: 1; transform: none; }
+    .front-num { font-size: 12px; letter-spacing: .16em; color: var(--blue); }
+    .front p { max-width: 600px; color: #5e6a76; font-size: 17px; }
+
+    /* Transition */
+    .bridge {
+      display: grid;
+      grid-template-columns: 1fr 110px 1fr;
+      gap: 28px;
+      margin-top: 50px;
+      align-items: stretch;
+    }
+    .bridge-col {
+      padding: 10px 0;
+    }
+    .bridge-col .label {
+      display: inline-block;
+      margin-bottom: 24px;
+      padding: 8px 12px;
+      border: 1px solid rgba(255,255,255,.18);
+      border-radius: 999px;
+      font-size: 10px;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--warm-soft);
+    }
+    .bridge-col ul { list-style: none; padding: 0; margin: 0; }
+    .bridge-col li {
+      padding: 16px 0;
+      border-bottom: 1px solid rgba(255,255,255,.13);
+      font-size: 19px;
+      color: rgba(255,255,255,.78);
+    }
+    .bridge-track {
+      position: relative;
+      display: grid;
+      place-items: center;
+    }
+    .bridge-track span {
+      display: block;
+      width: 1px;
+      height: 100%;
+      background: rgba(255,255,255,.14);
+      position: relative;
+      overflow: hidden;
+    }
+    .bridge-track span::after {
+      content: "";
+      position: absolute;
+      top: -20%; left: 0;
+      width: 100%; height: 30%;
+      background: linear-gradient(to bottom, transparent, var(--blue), transparent);
+      animation: bridgeFlow 3s linear infinite;
+    }
+    @keyframes bridgeFlow { to { transform: translateY(430%); } }
+    .bridge-quote {
+      margin-top: 64px;
+      max-width: 920px;
+      font-size: clamp(27px, 4vw, 52px);
+      line-height: 1.05;
+      letter-spacing: -.035em;
+    }
+
+    /* Investment */
+    .money-grid {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      gap: clamp(22px, 4vw, 70px);
+      align-items: center;
+      margin: 70px 0 54px;
+    }
+    .money-block {
+      padding: 34px 0;
+      border-top: 1px solid var(--line-dark);
+      border-bottom: 1px solid var(--line-dark);
+      min-height: 230px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .money-kicker { font-size: 10px; text-transform: uppercase; letter-spacing: .18em; color: var(--muted); }
+    .money-value { font-size: clamp(48px, 7vw, 96px); letter-spacing: -.055em; line-height: .9; color: var(--navy-900); font-weight: 500; }
+    .money-value small { font-size: .22em; letter-spacing: .02em; color: var(--muted); font-weight: 500; }
+    .money-plus { font-size: 44px; color: var(--warm); font-weight: 300; }
+    .money-note { color: #65717c; max-width: 500px; }
+    .variable-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--line-dark);
+      border: 1px solid var(--line-dark);
+      margin-top: 32px;
+    }
+    .variable {
+      background: var(--paper);
+      padding: 26px;
+      min-height: 185px;
+    }
+    .variable .n { color: var(--blue); font-size: 11px; letter-spacing: .17em; margin-bottom: 30px; }
+    .variable h3 { font-size: 22px; }
+    .variable p { font-size: 15px; color: #62707c; margin-bottom: 0; }
+    .money-close {
+      margin-top: 44px;
+      font-size: clamp(22px, 2.5vw, 34px);
+      line-height: 1.18;
+      letter-spacing: -.02em;
+      max-width: 920px;
+    }
+    .cost-note { margin-top: 28px; font-size: 13px; color: #7c8790; }
+
+    /* Final */
+    .final {
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background:
+        radial-gradient(circle at 80% 10%, rgba(77,131,255,.16), transparent 35%),
+        radial-gradient(circle at 20% 90%, rgba(197,166,101,.09), transparent 31%),
+        var(--navy-900);
+    }
+    .final h2 { max-width: 850px; font-size: clamp(46px, 7vw, 98px); }
+    .final .lead { max-width: 850px; }
+    .final-phases {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.12);
+      margin: 48px 0 52px;
+    }
+    .final-phase { background: rgba(6,17,31,.62); padding: 26px; }
+    .final-phase span { display: block; font-size: 10px; letter-spacing: .18em; color: var(--warm-soft); text-transform: uppercase; margin-bottom: 9px; }
+    .final-phase strong { font-size: 20px; font-weight: 520; }
+    .final-tagline {
+      font-size: clamp(29px, 4.6vw, 62px);
+      line-height: 1.02;
+      letter-spacing: -.04em;
+      max-width: 820px;
+      margin-bottom: 44px;
+    }
+    .final-tagline small { display: block; font-size: .42em; letter-spacing: -.01em; color: rgba(255,255,255,.66); margin-top: 12px; }
+    .final-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 52px;
+      padding: 0 20px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.18);
+      background: transparent;
+      color: white;
+      transition: transform .25s var(--ease), background .25s var(--ease), border-color .25s var(--ease);
+    }
+    .btn:hover { transform: translateY(-2px); background: rgba(255,255,255,.06); border-color: rgba(255,255,255,.32); }
+    .btn.primary { background: white; color: var(--navy-900); border-color: white; }
+    .btn.primary:hover { background: var(--warm-soft); border-color: var(--warm-soft); }
+    .final-signoff {
+      padding-top: 30px;
+      border-top: 1px solid rgba(255,255,255,.13);
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      color: rgba(255,255,255,.48);
+      font-size: 12px;
+    }
+
+    /* WhatsApp */
+    .chat-launcher {
+      position: fixed;
+      right: 24px;
+      bottom: 24px;
+      z-index: 90;
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      padding: 10px 14px 10px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(6,17,31,.88);
+      color: white;
+      backdrop-filter: blur(16px);
+      box-shadow: 0 18px 60px rgba(2,8,17,.28);
+      transition: transform .25s var(--ease), opacity .25s var(--ease);
+    }
+    .chat-launcher:hover { transform: translateY(-2px); }
+    .chat-launcher .dot {
+      width: 34px; height: 34px; border-radius: 50%;
+      display: grid; place-items: center;
+      background: var(--blue); color: white;
+      font-size: 10px; font-weight: 700; letter-spacing: .03em;
+    }
+    .chat-launcher .text { text-align: left; }
+    .chat-launcher .text strong { display: block; font-size: 13px; font-weight: 600; }
+    .chat-launcher .text small { display: block; color: rgba(255,255,255,.54); font-size: 10px; margin-top: 1px; }
+
+    .chat-panel {
+      position: fixed;
+      right: 24px;
+      bottom: 88px;
+      width: min(380px, calc(100vw - 32px));
+      z-index: 95;
+      border-radius: 24px;
+      overflow: hidden;
+      background: white;
+      color: var(--ink);
+      box-shadow: 0 28px 90px rgba(3,10,21,.34);
+      opacity: 0;
+      transform: translateY(14px) scale(.98);
+      pointer-events: none;
+      transition: opacity .25s var(--ease), transform .25s var(--ease);
+    }
+    .chat-panel.open { opacity: 1; transform: none; pointer-events: auto; }
+    .chat-head {
+      padding: 20px;
+      background: var(--navy-900);
+      color: white;
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+    .avatar { width: 42px; height: 42px; border-radius: 50%; display: grid; place-items: center; background: var(--blue); font-weight: 700; font-size: 12px; }
+    .chat-head strong { display: block; font-size: 14px; }
+    .chat-head small { color: rgba(255,255,255,.58); font-size: 11px; }
+    .chat-close {
+      margin-left: auto;
+      border: 0;
+      background: transparent;
+      color: rgba(255,255,255,.66);
+      font-size: 20px;
+      line-height: 1;
+      padding: 7px;
+    }
+    .chat-body { padding: 18px; }
+    .bubble {
+      max-width: 92%;
+      padding: 13px 14px;
+      border-radius: 16px 16px 16px 4px;
+      background: #eef1f4;
+      color: #384451;
+      font-size: 13px;
+      margin-bottom: 14px;
+    }
+    .chat-body textarea {
+      width: 100%;
+      min-height: 102px;
+      resize: vertical;
+      border: 1px solid #dbe0e5;
+      border-radius: 14px;
+      padding: 13px;
+      outline: none;
+      color: var(--ink);
+      background: white;
+    }
+    .chat-body textarea:focus { border-color: var(--blue); box-shadow: 0 0 0 3px rgba(77,131,255,.12); }
+    .chat-send {
+      width: 100%;
+      min-height: 48px;
+      margin-top: 10px;
+      border: 0;
+      border-radius: 14px;
+      background: var(--navy-900);
+      color: white;
+      font-weight: 600;
+    }
+    .chat-send:hover { background: var(--navy-800); }
+    .chat-privacy { margin-top: 9px; color: #87919a; font-size: 10px; text-align: center; }
+
+    /* Mobile */
+    @media (max-width: 900px) {
+      :root { --radius: 22px; }
+      section { min-height: auto; padding: 110px 22px 74px; }
+      .topbar { height: 62px; padding: 0 18px; }
+      .rail { display: none; }
+      .brand img { height: 23px; max-width: 130px; }
+      .section-counter { font-size: 9px; }
+      .hero { min-height: 100svh; padding-bottom: 40px; }
+      .hero::before { width: 118vw; right: -58vw; top: -32vw; }
+      .hero-meta { flex-direction: column; gap: 10px; }
+      .opp-grid, .trust-grid, .proposal-stage, .fronts-layout { grid-template-columns: 1fr; }
+      .metric { font-size: clamp(66px, 22vw, 112px); }
+      .growth-orbit { min-height: 390px; transform: scale(.88); margin: -30px 0; }
+      .phase-wrap, .bridge { grid-template-columns: 1fr; }
+      .phase-line { height: 76px; }
+      .phase-line::before { width: 100%; height: 1px; background: linear-gradient(to right, transparent, rgba(197,166,101,.78), transparent); }
+      .phase-line::after { content: "↓"; }
+      .fronts-intro { position: relative; top: auto; }
+      .front { min-height: auto; grid-template-columns: 46px 1fr; opacity: 1; transform: none; }
+      .bridge-track { height: 60px; }
+      .bridge-track span { height: 1px; width: 100%; }
+      .bridge-track span::after { width: 28%; height: 100%; left: -28%; top: 0; background: linear-gradient(to right, transparent, var(--blue), transparent); animation: bridgeFlowX 3s linear infinite; }
+      @keyframes bridgeFlowX { to { transform: translateX(460%); } }
+      .career-grid { grid-template-columns: 1fr; gap: 32px; }
+      .capability { grid-template-columns: 1fr; gap: 8px; }
+      .career-milestones { grid-template-columns: 1fr 1fr; }
+      .milestone { padding: 22px 18px 22px 0; min-height: 130px; }
+      .milestone:nth-child(2) { border-right: 0; padding-left: 18px; }
+      .milestone:nth-child(3) { border-top: 1px solid rgba(255,255,255,.15); }
+      .milestone:nth-child(4) { border-top: 1px solid rgba(255,255,255,.15); border-right: 0; padding-left: 18px; }
+      .money-grid { grid-template-columns: 1fr; gap: 0; }
+      .money-plus { padding: 12px 0; }
+      .variable-grid { grid-template-columns: 1fr; }
+      .final-phases { grid-template-columns: 1fr; }
+      .final-signoff { flex-direction: column; }
+      .chat-launcher { right: 16px; bottom: 16px; }
+      .chat-launcher .text { display: none; }
+      .chat-launcher { padding: 8px; }
+      .chat-panel { right: 16px; bottom: 76px; }
+
+      .growth-chain { grid-template-columns: 1fr; }
+      .proposal-area { grid-template-columns: 1fr; gap: 7px; }
+    }
+
+    @media (max-width: 560px) {
+      h1 { font-size: clamp(44px, 14vw, 64px); }
+      h2 { font-size: clamp(34px, 10vw, 48px); }
+      .growth-orbit { min-height: 330px; transform: scale(.74); margin: -60px 0; }
+      .phase { min-height: 380px; padding: 26px; }
+      .career-milestones { grid-template-columns: 1fr; }
+      .milestone, .milestone:not(:first-child) { padding: 20px 0; border-right: 0; border-top: 1px solid rgba(255,255,255,.15); min-height: auto; }
+      .milestone:first-child { border-top: 0; }
+      .money-value { font-size: 56px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation: none !important; transition-duration: .001ms !important; scroll-behavior: auto !important; }
+      .reveal { opacity: 1 !important; transform: none !important; }
+    }
+  </style>
+  <meta property="og:url" content="https://urbanmate.github.io/agenda-sp/claw-growth-2027/" />
+  <link rel="canonical" href="https://urbanmate.github.io/agenda-sp/claw-growth-2027/" />
 </head>
 <body>
-<div class="loading">Carregando proposta…</div>
-<script>
-(async()=>{
-  try{
-    const [a,b]=await Promise.all([fetch("./site-html-gz-b64-1.txt"),fetch("./site-html-gz-b64-2.txt")]);
-    if(!a.ok||!b.ok) throw new Error("payload");
-    const b64=(await a.text()).trim()+(await b.text()).trim();
-    const bin=atob(b64), bytes=new Uint8Array(bin.length);
-    for(let i=0;i<bin.length;i++) bytes[i]=bin.charCodeAt(i);
-    const stream=new Blob([bytes]).stream().pipeThrough(new DecompressionStream("gzip"));
-    let html=await new Response(stream).text();
-    html=html.replace(/<meta property="og:image" content="[^"]*" \/>/,'<meta property="og:image" content="https://claw-growth-2027.lovable.app/og-claw-growth-2027.png" />');
-    document.open(); document.write(html); document.close();
-  }catch(e){
-    document.body.innerHTML='<div style="max-width:520px;padding:32px;line-height:1.6"><strong>Não foi possível carregar a proposta.</strong><br>Tente atualizar a página.</div>';
-  }
-})();
-</script>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="topbar" id="topbar">
+    <a class="brand" href="#s1" aria-label="C Law Experience, voltar ao início">
+      <img src="https://framerusercontent.com/images/ujOzMTiJNzmpt433O1mWe0npu84.svg?height=179&width=371" alt="C Law Experience" onerror="this.style.display='none';this.nextElementSibling.style.display='block'" />
+      <span class="brand-fallback">C LAW EXPERIENCE</span>
+    </a>
+    <div class="section-counter"><strong id="currentSection">01</strong> / 09</div>
+  </header>
+
+  <nav class="rail" aria-label="Navegação da proposta">
+    <a href="#s1" class="active" data-nav="1" aria-label="Seção 1">01</a>
+    <a href="#s2" data-nav="2" aria-label="Seção 2">02</a>
+    <a href="#s3" data-nav="3" aria-label="Seção 3">03</a>
+    <a href="#s4" data-nav="4" aria-label="Seção 4">04</a>
+    <a href="#s5" data-nav="5" aria-label="Seção 5">05</a>
+    <a href="#s6" data-nav="6" aria-label="Seção 6">06</a>
+    <a href="#s7" data-nav="7" aria-label="Seção 7">07</a>
+    <a href="#s8" data-nav="8" aria-label="Seção 8">08</a>
+    <a href="#s9" data-nav="9" aria-label="Seção 9">09</a>
+  </nav>
+
+  <main>
+    <section class="hero dark" id="s1" data-section="1">
+      <div class="eyebrow reveal">Proposta de Growth 2027</div>
+      <h1 class="reveal">C Law<br>Experience</h1>
+      <div class="hero-sub reveal">Growth Foundation + Growth Leadership</div>
+      <div class="hero-meta reveal">
+        <span>Wagner Soares · Setembro de 2026</span>
+        <span class="scroll-cue"><i></i> explore a proposta</span>
+      </div>
+    </section>
+
+    <section class="light" id="s2" data-section="2">
+      <div class="eyebrow reveal">Oportunidade de crescimento</div>
+      <h2 class="reveal">O C Law já tem o mais difícil:<br>relevância, público qualificado e demanda.</h2>
+      <p class="lead reveal">Agora existe uma oportunidade de transformar esses ativos em <strong>mais crescimento, mais valor e mais receita.</strong></p>
+      <p class="lead reveal">O próximo ciclo não precisa ser pensado apenas como uma edição maior. Ele pode ser pensado como um negócio mais inteligente, com novas formas de ampliar audiência, ocupar mercado e monetizar melhor aquilo que o C Law já construiu.</p>
+
+      <div class="opp-grid">
+        <div class="big-metric reveal">
+          <div class="metric-label">Audiência · inscrições pagas</div>
+          <div class="metric" aria-label="De aproximadamente 400 para a meta de 1000 participantes pagantes">
+            <span>400</span><span class="arrow">→</span><span class="target" id="targetCounter">1.000</span>
+          </div>
+          <p class="metric-note">Existe espaço para ampliar significativamente a base de participantes pagantes, trabalhando com mais inteligência sobre aquisição, relacionamento, conversão e uso dos ativos já existentes.</p>
+        </div>
+
+        <div class="pillars reveal">
+          <div class="pillar">
+            <strong>Mercado</strong>
+            <p>O C Law pode ampliar sua presença além das praças onde hoje concentra sua audiência, criando novas conexões com profissionais, empresas e ecossistemas jurídicos em diferentes regiões do Brasil.</p>
+          </div>
+          <div class="pillar">
+            <strong>Receita</strong>
+            <p>A demanda comercial já existente mostra que o crescimento não precisa depender apenas de mais espaço físico. Existe oportunidade para incrementar ofertas atuais, desenvolver novos produtos, criar novas propriedades comerciais e ampliar o valor entregue a patrocinadores e parceiros.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="opportunity-close reveal">
+        <h3>O potencial está em fazer essas três frentes crescerem juntas.</h3>
+        <div class="growth-chain">
+          <div><strong>Mais audiência</strong> amplia relevância.</div>
+          <div><strong>Mais mercado</strong> amplia alcance.</div>
+          <div><strong>Mais produtos</strong> ampliam receita.</div>
+        </div>
+        <p>E, quando essas frentes passam a ser conduzidas de forma integrada, o C Law deixa de crescer apenas como evento e passa a <strong>ampliar o valor do negócio como um todo.</strong></p>
+      </div>
+    </section>
+
+    <section class="dark-alt" id="s3" data-section="3">
+      <div class="career-head">
+        <div class="eyebrow reveal">Da operação ao Growth</div>
+        <h2 class="reveal">Uma carreira construída fazendo projetos, marcas e negócios crescerem.</h2>
+      </div>
+
+      <div class="career-grid">
+        <div class="career-copy reveal">
+          <p>Minha trajetória profissional começou em <strong>2008</strong>, na produção de eventos. Em poucos meses, passei a assumir a gestão da operação da agência, liderando projetos, clientes, equipes, fornecedores, orçamentos, negociações e entregas de alta complexidade.</p>
+          <p>Foram quase oito anos nesse ambiente, construindo uma base muito prática de gestão: entender um desafio, organizar recursos, conectar pessoas diferentes e fazer a entrega acontecer.</p>
+          <p>Ao longo dos anos, essa experiência evoluiu para posições de <strong>Marketing e liderança</strong>, incorporando marca, construção de audiência, aquisição, CRM, conteúdo, mídia, performance, automação, inteligência de dados e desenvolvimento de mercado.</p>
+          <p>Mais recentemente, tecnologia passou a ocupar um espaço ainda mais importante no meu trabalho. Hoje utilizo <strong>ferramentas de inteligência, automação e desenvolvimento digital</strong> não apenas como apoio à execução, mas como instrumentos para estruturar processos, acelerar análises, testar hipóteses, construir produtos e transformar ideias em soluções funcionais.</p>
+          <p>Essa capacidade também está presente na construção da <strong>urbanmate</strong>, projeto que concebi desde a proposta de valor e modelo de negócio até jornadas, operação e desenvolvimento do produto digital, integrando estratégia, tecnologia e inteligência na criação de uma nova empresa.</p>
+          <p>Hoje, minha atuação acontece justamente na interseção entre:</p>
+        </div>
+
+        <div class="capability-list reveal">
+          <div class="capability"><strong>Estratégia & Liderança</strong><span>Transformar objetivos de negócio em prioridades, planos e iniciativas capazes de sair do papel.</span></div>
+          <div class="capability"><strong>Growth & Audiência</strong><span>Construir demanda, relacionamento e conversão por meio de aquisição, CRM, campanhas, conteúdo, performance e dados.</span></div>
+          <div class="capability"><strong>Produto & Receita</strong><span>Identificar oportunidades, desenvolver produtos e propriedades comerciais, incrementar ofertas existentes e trabalhar junto ao comercial para gerar novas possibilidades de receita.</span></div>
+          <div class="capability"><strong>Tecnologia & Inteligência</strong><span>Usar dados, automação, ferramentas de inteligência e tecnologia para acelerar decisões, organizar operações, testar caminhos e construir novas soluções.</span></div>
+          <div class="capability"><strong>Operação & Transformação</strong><span>Estruturar processos, integrar áreas, organizar ferramentas, fornecedores e parceiros e transformar estruturas existentes para sustentar crescimento.</span></div>
+        </div>
+      </div>
+
+      <div class="career-label reveal">Uma trajetória que atravessa diferentes mercados</div>
+      <div class="career-milestones reveal">
+        <div class="milestone"><strong>Desde 2008</strong><span>atuando entre projetos, eventos, marketing e negócios</span></div>
+        <div class="milestone"><strong>Quase 8 anos</strong><span>em gestão de projetos e eventos de alta complexidade</span></div>
+        <div class="milestone"><strong>+200%</strong><span>de crescimento de comunidades digitais em projetos B2B</span></div>
+        <div class="milestone"><strong>3 anos</strong><span>de atuação direta com o mercado jurídico B2B por meio da Fenalaw</span></div>
+      </div>
+
+      <p class="career-market reveal">Além do jurídico, minha experiência inclui <strong>eventos médicos, educação continuada, indústria farmacêutica, feiras, experiências de marca e outros ambientes B2B especializados</strong>, trabalhando com empresas, parceiros, associações, fornecedores e públicos altamente segmentados.</p>
+
+      <div class="career-close reveal">
+        <strong>É essa combinação que quero colocar a serviço do crescimento do C Law.</strong>
+        <p>Porque minha contribuição não parte de uma única disciplina. Ela nasce da capacidade de conectar <strong>estratégia, audiência, produto, comercial, tecnologia e operação</strong> para transformar oportunidades em crescimento.</p>
+      </div>
+    </section>
+
+    <section class="light-alt" id="s4" data-section="4">
+      <div class="eyebrow reveal">A proposta</div>
+      <h2 class="reveal">Assumir Growth como uma frente de negócio do C Law.</h2>
+      <div class="proposal-stage reveal" id="proposalStage">
+        <div class="growth-orbit" aria-label="Estratégia, Audiência, Mercado, Produto, Comercial e Dados e Tecnologia conectados em Growth">
+          <div class="growth-core">Growth</div>
+          <div class="orbit-label">Estratégia</div>
+          <div class="orbit-label">Audiência</div>
+          <div class="orbit-label">Mercado</div>
+          <div class="orbit-label">Produto</div>
+          <div class="orbit-label">Comercial</div>
+          <div class="orbit-label">Dados & Tecnologia</div>
+        </div>
+        <div class="proposal-copy">
+          <p>Minha proposta é atuar como <strong>liderança externa de Growth</strong>, trabalhando diretamente com Ana, Carina e as estruturas comercial e operacional já existentes.</p>
+          <p>Não para criar uma camada paralela de marketing.</p>
+          <p>Mas para ajudar o C Law a <strong>identificar onde existe crescimento, escolher prioridades e transformar oportunidades em iniciativas capazes de gerar audiência, mercado e receita.</strong></p>
+
+          <div class="proposal-areas">
+            <div class="proposal-area"><strong>Estratégia</strong><span>Definir onde concentrar energia, investimento e atenção ao longo do ciclo.</span></div>
+            <div class="proposal-area"><strong>Audiência</strong><span>Construir caminhos para ampliar aquisição, relacionamento e conversão de participantes pagantes.</span></div>
+            <div class="proposal-area"><strong>Mercado</strong><span>Identificar oportunidades de expansão e ampliar a presença do C Law em novos públicos e regiões.</span></div>
+            <div class="proposal-area"><strong>Produto</strong><span>Desenvolver novas possibilidades de oferta e aumentar o valor das propriedades já existentes.</span></div>
+            <div class="proposal-area"><strong>Comercial</strong><span>Trabalhar junto ao time de vendas para transformar oportunidades em produtos, propostas e novas receitas.</span></div>
+            <div class="proposal-area"><strong>Dados & Tecnologia</strong><span>Usar informação, ferramentas e inteligência para acelerar análise, testar caminhos e apoiar decisões melhores.</span></div>
+          </div>
+
+          <div class="proposal-role">
+            <strong>Meu papel é conectar essas frentes e fazer o crescimento avançar.</strong>
+            <p>Isso significa trabalhar próximo das decisões, acompanhar o que o mercado responde, ajustar prioridades quando necessário e aproveitar com velocidade as oportunidades que surgirem.</p>
+            <p>O C Law já possui estrutura, marca, audiência, parceiros e capacidade comercial.</p>
+            <div class="final-line">Minha proposta é ajudar a transformar esses ativos em <strong>mais valor para o negócio.</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="dark" id="s5" data-section="5">
+      <div class="eyebrow reveal">Dois momentos de trabalho</div>
+      <h2 class="reveal">Uma mesma direção de crescimento.</h2>
+      <div class="phase-wrap reveal">
+        <article class="phase">
+          <div>
+            <div class="num">FASE 01</div>
+            <h3>Growth<br>Foundation</h3>
+            <div class="date">Outubro + Novembro de 2026</div>
+          </div>
+          <p>Entrar no negócio, definir prioridades, validar oportunidades e colocar as primeiras iniciativas em movimento.</p>
+          <div class="verb">estruturar + testar + iniciar</div>
+        </article>
+        <div class="phase-line" aria-hidden="true"></div>
+        <article class="phase">
+          <div>
+            <div class="num">FASE 02</div>
+            <h3>Growth<br>Leadership</h3>
+            <div class="date">Dezembro de 2026 → C Law 2027</div>
+          </div>
+          <p>Conduzir o crescimento ao longo do ciclo, acompanhar a resposta do mercado, ajustar decisões e ampliar o que demonstrar resultado.</p>
+          <div class="verb">conduzir + ajustar + ampliar</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="light" id="s6" data-section="6">
+      <div class="fronts-layout">
+        <div class="fronts-intro reveal">
+          <div class="eyebrow">Growth Foundation</div>
+          <h2>Cinco frentes para mover o negócio na mesma direção.</h2>
+          <p>Dados, tecnologia e inteligência atravessam todas as frentes, apoiando análise, velocidade e tomada de decisão.</p>
+        </div>
+        <div class="fronts-list">
+          <article class="front active">
+            <div class="front-num">01</div>
+            <div><h3>Direção de Growth</h3><p>Definir prioridades, indicadores e decisões que devem orientar o próximo ciclo.</p></div>
+          </article>
+          <article class="front">
+            <div class="front-num">02</div>
+            <div><h3>Audiência & Aquisição</h3><p>Ampliar a audiência paga a partir de um uso mais inteligente dos canais, dados, ferramentas e ativos que o C Law já possui.</p></div>
+          </article>
+          <article class="front">
+            <div class="front-num">03</div>
+            <div><h3>Expansão de Mercado</h3><p>Identificar onde existe espaço real para o C Law crescer e quais mercados devem receber prioridade.</p></div>
+          </article>
+          <article class="front">
+            <div class="front-num">04</div>
+            <div><h3>Produto, Comercial & Receita</h3><p>Desenvolver incrementos no portfólio atual e novas propriedades e produtos capazes de abrir outras fontes de receita.</p></div>
+          </article>
+          <article class="front">
+            <div class="front-num">05</div>
+            <div><h3>Teste & Performance</h3><p>Colocar oportunidades em campo, acompanhar a resposta e concentrar energia e investimento no que demonstrar resultado.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="dark-alt" id="s7" data-section="7">
+      <div class="eyebrow reveal">Foundation → Leadership</div>
+      <h2 class="reveal">Novembro precisa terminar com decisões tomadas, prioridades claras e trabalho já em curso.</h2>
+      <div class="bridge reveal">
+        <div class="bridge-col">
+          <span class="label">Ao final da Foundation</span>
+          <ul>
+            <li>direção para 2027 definida</li>
+            <li>prioridades de audiência e aquisição estabelecidas</li>
+            <li>prioridades de expansão identificadas</li>
+            <li>incrementos e novos produtos comerciais estruturados</li>
+            <li>primeiras iniciativas em campo</li>
+            <li>indicadores e acompanhamento definidos</li>
+            <li>prioridades de dezembro organizadas</li>
+          </ul>
+        </div>
+        <div class="bridge-track" aria-hidden="true"><span></span></div>
+        <div class="bridge-col">
+          <span class="label">A partir de dezembro</span>
+          <ul>
+            <li>aquisição & conversão</li>
+            <li>expansão de mercado</li>
+            <li>produto, comercial & novas receitas</li>
+            <li>performance</li>
+            <li>integração entre marketing, comercial e operação</li>
+          </ul>
+        </div>
+      </div>
+      <div class="bridge-quote reveal">Em dezembro, não começamos do zero.<br><span style="color:rgba(255,255,255,.62)">Começamos com decisões, prioridades e iniciativas já em movimento.</span></div>
+    </section>
+
+    <section class="light-alt" id="s8" data-section="8">
+      <div class="eyebrow reveal">Modelo de remuneração alinhado ao valor criado</div>
+      <h2 class="reveal">Base fixa + participação em performance.</h2>
+      <p class="lead reveal">Quero que a lógica seja simples: existe um componente fixo pela responsabilidade e dedicação à função e uma parcela variável associada ao crescimento que conseguirmos gerar.</p>
+
+      <div class="money-grid reveal">
+        <div class="money-block">
+          <div class="money-kicker">Componente fixo</div>
+          <div class="money-value">R$ 13.000 <small>/ mês</small></div>
+          <div class="money-note">Remunera minha dedicação, liderança e condução do trabalho.</div>
+        </div>
+        <div class="money-plus">+</div>
+        <div class="money-block">
+          <div class="money-kicker">Componente variável</div>
+          <div class="money-value">Performance</div>
+          <div class="money-note">Uma parcela adicional da minha remuneração, baseada em resultados reais e em critérios definidos conjuntamente antes do início do trabalho.</div>
+        </div>
+      </div>
+
+      <p class="reveal"><strong>Growth Foundation | Outubro + Novembro</strong><br>R$ 13.000/mês · R$ 26.000 de componente fixo na Fase 1</p>
+      <p class="reveal">Na continuidade para a Growth Leadership, o componente fixo permanece em <strong>R$ 13.000/mês</strong>.</p>
+
+      <div class="variable-grid reveal">
+        <article class="variable"><div class="n">01</div><h3>Crescimento de audiência</h3><p>Marcos progressivos relacionados à evolução das inscrições pagas.</p></article>
+        <article class="variable"><div class="n">02</div><h3>Novos produtos comerciais</h3><p>Participação vinculada a novos produtos e propriedades desenvolvidos durante o trabalho e efetivamente comercializados.</p></article>
+        <article class="variable"><div class="n">03</div><h3>Incremento em produtos existentes</h3><p>Participação sobre o <strong>valor adicional gerado</strong>, e não sobre a receita que o produto já produzia anteriormente.</p></article>
+      </div>
+
+      <div class="money-close reveal"><strong>Os R$ 13 mil são a base fixa da minha remuneração, não o limite.</strong> Quero que uma parte relevante do meu potencial de ganho esteja diretamente ligada ao valor que eu ajudar a criar para o C Law.</div>
+      <p class="reveal" style="margin-top:26px;max-width:900px;color:#596673">Os critérios, marcos e valores da parcela variável serão definidos juntos, considerando a realidade econômica de cada oportunidade e os objetivos do C Law.</p>
+      <div class="cost-note reveal">Mídia, ferramentas adicionais, produção e terceiros necessários às iniciativas não integram essa remuneração e serão avaliados separadamente.</div>
+    </section>
+
+    <section class="final dark" id="s9" data-section="9">
+      <div>
+        <div class="eyebrow reveal">Próximo ciclo</div>
+        <h2 class="reveal">Quero construir o próximo ciclo com vocês.</h2>
+        <p class="lead reveal">O que me atrai no C Law não é apenas a possibilidade de ampliar audiência.</p>
+        <p class="lead reveal">Vejo um negócio com <strong>marca, mercado, relações e ativos comerciais que ainda podem gerar muito mais valor.</strong></p>
+        <p class="lead reveal">É nisso que quero trabalhar com vocês.</p>
+        <p class="lead reveal">Minha proposta é começarmos em outubro, usando a <strong>Growth Foundation</strong> para transformar oportunidades em prioridades, decisões e primeiras iniciativas concretas.</p>
+        <p class="lead reveal">Ao final de novembro, teremos elementos reais para decidir juntos a continuidade da <strong>Growth Leadership</strong> a partir de dezembro.</p>
+        <p class="lead reveal">Nesse primeiro período, definimos também os critérios da remuneração variável, deixando claro desde o início como <strong>responsabilidade, resultado e remuneração</strong> se conectam.</p>
+
+        <div class="final-phases reveal">
+          <div class="final-phase"><span>Growth Foundation</span><strong>Outubro + Novembro</strong></div>
+          <div class="final-phase"><span>Growth Leadership</span><strong>Dezembro → C Law 2027</strong></div>
+        </div>
+
+        <div class="final-tagline reveal">Audiência. Mercado. Receita.<small>Growth para ampliar o valor do C Law.</small></div>
+        <div class="final-actions reveal">
+          <button class="btn primary" type="button" data-open-chat>Quero conversar sobre a proposta →</button>
+          <a class="btn" href="#s1">Rever proposta ↑</a>
+        </div>
+      </div>
+      <div class="final-signoff reveal">
+        <span>Wagner Soares</span>
+        <span>C Law Experience · Proposta de Growth 2027</span>
+      </div>
+    </section>
+  </main>
+
+  <button class="chat-launcher" type="button" id="chatLauncher" aria-expanded="false" aria-controls="chatPanel">
+    <span class="dot">WS</span>
+    <span class="text"><strong>Quer falar comigo?</strong><small>abre direto no WhatsApp</small></span>
+  </button>
+
+  <aside class="chat-panel" id="chatPanel" aria-hidden="true" aria-label="Falar com Wagner pelo WhatsApp">
+    <div class="chat-head">
+      <div class="avatar">WS</div>
+      <div><strong>Wagner Soares</strong><small>WhatsApp</small></div>
+      <button class="chat-close" id="chatClose" type="button" aria-label="Fechar">×</button>
+    </div>
+    <div class="chat-body">
+      <div class="bubble">Se quiser conversar sobre a proposta, escreva aqui. A mensagem abre direto no meu WhatsApp.</div>
+      <textarea id="chatMessage" aria-label="Mensagem para Wagner">Oi, Wagner. Vi a proposta do C Law e gostaria de conversar sobre ela.</textarea>
+      <button class="chat-send" id="chatSend" type="button">Abrir no WhatsApp ↗</button>
+      <div class="chat-privacy">Nenhuma mensagem é enviada sem você tocar no botão.</div>
+    </div>
+  </aside>
+
+  <script>
+    const topbar = document.getElementById('topbar');
+    const currentSection = document.getElementById('currentSection');
+    const railLinks = [...document.querySelectorAll('[data-nav]')];
+    const sections = [...document.querySelectorAll('[data-section]')];
+
+    window.addEventListener('scroll', () => {
+      topbar.classList.toggle('scrolled', window.scrollY > 30);
+    }, { passive: true });
+
+    const revealObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('is-visible');
+      });
+    }, { threshold: .16 });
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    const sectionObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const n = entry.target.dataset.section;
+        currentSection.textContent = String(n).padStart(2,'0');
+        railLinks.forEach(a => a.classList.toggle('active', a.dataset.nav === n));
+      });
+    }, { rootMargin: '-42% 0px -48% 0px', threshold: 0 });
+    sections.forEach(section => sectionObserver.observe(section));
+
+    const fronts = [...document.querySelectorAll('.front')];
+    const frontObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          fronts.forEach(el => el.classList.remove('active'));
+          entry.target.classList.add('active');
+        }
+      });
+    }, { rootMargin: '-34% 0px -48% 0px', threshold: .08 });
+    fronts.forEach(front => frontObserver.observe(front));
+
+    const metricTarget = document.getElementById('targetCounter');
+    const metricObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting || metricTarget.dataset.done) return;
+        metricTarget.dataset.done = '1';
+        const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (reduce) { metricTarget.textContent = '1.000'; return; }
+        const start = 400, end = 1000, duration = 1100, t0 = performance.now();
+        const tick = now => {
+          const p = Math.min(1, (now - t0) / duration);
+          const eased = 1 - Math.pow(1 - p, 3);
+          const value = Math.round(start + (end - start) * eased);
+          metricTarget.textContent = value.toLocaleString('pt-BR');
+          if (p < 1) requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+      });
+    }, { threshold: .55 });
+    metricObserver.observe(metricTarget);
+
+    const chatPanel = document.getElementById('chatPanel');
+    const chatLauncher = document.getElementById('chatLauncher');
+    const chatClose = document.getElementById('chatClose');
+    const chatSend = document.getElementById('chatSend');
+    const chatMessage = document.getElementById('chatMessage');
+    const openChatButtons = document.querySelectorAll('[data-open-chat]');
+
+    function setChat(open) {
+      chatPanel.classList.toggle('open', open);
+      chatPanel.setAttribute('aria-hidden', String(!open));
+      chatLauncher.setAttribute('aria-expanded', String(open));
+      if (open) setTimeout(() => chatMessage.focus(), 140);
+    }
+    chatLauncher.addEventListener('click', () => setChat(!chatPanel.classList.contains('open')));
+    chatClose.addEventListener('click', () => setChat(false));
+    openChatButtons.forEach(btn => btn.addEventListener('click', () => setChat(true)));
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') setChat(false); });
+
+    chatSend.addEventListener('click', () => {
+      const text = chatMessage.value.trim() || 'Oi, Wagner. Vi a proposta do C Law e gostaria de conversar.';
+      const url = 'https://wa.me/5511930831221?text=' + encodeURIComponent(text);
+      window.open(url, '_blank', 'noopener,noreferrer');
+    });
+  </script>
 </body>
 </html>
