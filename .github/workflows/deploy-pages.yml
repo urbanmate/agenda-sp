@@ -23,28 +23,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
-
-      - name: Rebuild exact C Law Growth HTML
-        shell: bash
-        run: |
-          cat claw-growth-2027/site-html-gz-b64-1.txt claw-growth-2027/site-html-gz-b64-2.txt             | tr -d '\n\r '             | base64 --decode             | gzip --decompress             > claw-growth-2027/index.html
-
-          python3 - <<'PY'
-          from pathlib import Path
-          import re
-          p = Path("claw-growth-2027/index.html")
-          s = p.read_text(encoding="utf-8")
-          og = "https://claw-growth-2027.lovable.app/og-claw-growth-2027.png"
-          s = s.replace('content="og-growth-2027.png"', f'content="{og}"')
-          s = re.sub(r'\s*<link rel="icon" href="favicon\.ico"[^>]*>', '', s)
-          s = re.sub(r'\s*<link rel="icon" href="favicon-32\.png"[^>]*>', '', s)
-          s = re.sub(r'\s*<link rel="apple-touch-icon" href="apple-touch-icon\.png"[^>]*>', '', s)
-          url = "https://urbanmate.github.io/agenda-sp/claw-growth-2027/"
-          if 'property="og:url"' not in s:
-              s = s.replace("</head>", f'  <meta property="og:url" content="{url}" />\n  <link rel="canonical" href="{url}" />\n</head>')
-          p.write_text(s, encoding="utf-8")
-          PY
-
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload static site
